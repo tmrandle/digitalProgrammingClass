@@ -8,7 +8,33 @@
 
 
 <body>
-    <h1>Hello Class!</h1>
+      
+    <header>
+        <h1>Hello Class!</h1>
+        <h2 id="time"></h2>
+        <script defer>
+            //this embedded script should put the date on the webpage
+            var date = new Date();
+            document.getElementById("time").innerHTML = "Today is " + (date.getMonth()+1) + "/" + date.getDate() + "/" + date.getFullYear();
+        </script>
+    
+    </header>
+    
+    
+    <div id=intro>
+        
+        <p>Welcome to my practice webpage.  My name is Tara.</p>
+        <p id="yourName">What's your name?</p>
+        
+        <!-- <script>
+            document.write("This is a test message.");
+        </script>  -->
+
+       <!--Maybe I can add a prompt for them to guess how many cats I have???-->
+
+    </div>
+    
+
 
 
 </body>

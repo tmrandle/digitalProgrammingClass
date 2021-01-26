@@ -1,0 +1,19 @@
+@mixin button(){
+    height: 40px; //make sure there is enough height for the words and text size
+    width: 125px;
+    margin: 0px 20px;
+    padding: 10px; //too much padding might make the words not fit in the button
+    color: $lightText;
+    font-family: $smallText;
+    font-size: $smallTextSize;
+    text-decoration: none;
+    background-color: $navBackColor;
+    border-radius: 10px;
+    // transition: scale ease-in;
+    &:hover, &:focus {
+        background-color: lighten($navBackColor, 5%);
+        cursor: pointer;
+        // transform: scale(1.5, 1.08);
+    }
+
+}
