@@ -10,7 +10,7 @@ console.log(petName);  //just testing a variable string using console.log
 
 yourName = prompt("What is your Name?");
 
-if (yourName == null) {
+if (yourName === null) {
     alert("You have not entered a name. ");
 }
 else {
