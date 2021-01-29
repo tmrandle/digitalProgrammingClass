@@ -2,28 +2,32 @@ var petName = "Cinnamon";
 var yourName;
 var x = 10;
 var y = 30;
-sum = x + y;
+var sum = x + y;
+var guess;
+
+
 
 console.log(petName);  //just testing a variable string using console.log
 
-
-
 yourName = prompt("What is your Name?");
+console.log(yourName);
 
 if (yourName === null) {
-    alert("You have not entered a name. ");
+    alert("You haven't entered a name.");
+}
+else if (yourName === ""){
+    alert("You haven't entered a name.");
 }
 else {
-    document.write("It's nice to meet you " + yourName + ".");
+    document.getElementById('welcome').innerHTML=("Hello, " + yourName + " .");
 }
 
+guess = prompt("Please enter a number.");
+console.log(guess);
+document.write("I'm going to guess that your number is... " + guess + " .");
 
 
 
-
-/*if (yourName != null) {
-    document.write("Nice to meet you " + yourName + ".");
-}
 
 
 

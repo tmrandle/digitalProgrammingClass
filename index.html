@@ -11,7 +11,11 @@
       
     <header>
         <h1>My Practice Website.</h1>
+       
         <h2 id="time"></h2>
+        <p id="welcome"></p>
+        <p>Welcome to my page.  It's nice to meet you.</p>
+        
         <script defer>
             //this embedded script should put the date on the webpage
             var date = new Date();
@@ -21,23 +25,17 @@
     </header>
     
     
-    <div id=intro>
-        
-        <p>Welcome to my practice webpage.  My name is Tara.</p>
-               
-        <!-- <script>
-            document.write("This is a test message.");
-        </script>  -->
-
-
+    <div id=intro>      
+        <p>My name is Tara.</p>
     </div>
-    
+
+    <!--I modified a button with on click seen on w3schools just to see what it would do-->
     <p id="sum">What is the sum of 30 + 10?</p>
-    <button type="button" onclick="document.getElementById('sum').innerHTML = 'The sum of 30 + 10 is ' + sum + '.'">Click for the sum</button>
+    <button type="button" onclick="document.getElementById('sum').innerHTML = 'The sum of 30 + 10 equals ' + sum + '.'">Click for the sum</button>
     <br>
     <br>
-    <p>Okay.  Let's do a little math.</p>
-    <button type="button" onclick="x = prompt('What should the value of x be?')">Click to enter value of x.</button>
+    
+   
   
 </body>
  <!--this links to my javasript page-->

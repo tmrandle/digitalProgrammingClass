@@ -3,3 +3,7 @@
 @import "./partials/_typography";
 @import "./partials/_mixins";
 
+body{
+    background-color: $backgroundColor;
+    text-align: center;
+}
