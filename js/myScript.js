@@ -4,6 +4,7 @@ var x = 10;
 var y = 30;
 var sum = x + y;
 var guess;
+var guessSum;
 
 
 
@@ -22,15 +23,37 @@ else {
     document.getElementById('welcome').innerHTML=("Hello, " + yourName + " .");
 }
 
-guess = prompt("Please enter a number.");
+/*The prompt response is stored as a string value and can't be used for math equations.  It returns the value NaN. Unless it is changed by using parseInt*/
+guess = prompt("For a better experience, please enter a number.");
+guess = parseInt(guess);
 console.log(guess);
-document.write("I'm going to guess that your number is... " + guess + " .");
 
 
 
+if (isNaN(guess)){
+    alert("That is not a number.");
+    guess = prompt("Please enter a number.");
+    guess = parseInt(guess);
+    console.log(guess);
+}
+else{
+    guessSum = guess + x;
+    document.getElementById('guessSum').innerHTML = ("The sum of your number, " + guess + " , plus 10 is " + guessSum + " .");
+}
 
 
 
+if (guess == 7){
+    document.write("Wow! Seven is my favorite number.");
+    document.write("This is a test message.");
+}
+else {
+    document.write("I'm going to guess that the number you entered is... " + guess + " .");
+    document.write("This is a test message.");
+}
 
-/*<button type="button" onclick="document.write("Hmmm...maybe the website needs to be refreshed")">Try it</button>
-this is a different way of using the document.write function.  if click everything goes away and what is in the parenthesis is printed on the site-*/
+
+/*if ((guess === null) || (guess === "")){
+    document.write("Hmmm...I guess that you didn't want to enter a number.  Too many prompts?");
+    document.write("This is a test message.");
+}*/

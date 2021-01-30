@@ -5,5 +5,79 @@
 
 body{
     background-color: $backgroundColor;
-    text-align: center;
+   
+    header{
+        height: 180px;
+        width: 100%;
+        margin: 0px 0px 5px 0px;
+        display: grid;
+        grid-template-rows: 80px auto;
+        grid-template-columns: 1fr;
+        background-color: $headerBackColor;
+
+        h1{
+           height: 80px;
+           width: 1fr;
+           font-family: $headerFont; 
+           font-size: $headerFontSize;
+           color: $lightText;
+           text-align: center;
+        }
+
+        h2{
+            height: auto;
+            background-color: $headerBackColor;
+            color: $lightText;
+            text-align: center;
+
+        }
+    }
+
+    .content{
+        gap: 15px;
+        height: 450px;
+        width: 100%;
+        margin: 40px 0px 20px 0px;
+        background-color: ivory;
+        display: grid;
+        grid-template-rows: 180px auto;
+        grid-template-columns: 1fr;
+       
+      
+        grid-template-areas:
+         "welcome"
+         "math";
+         justify-content: center;
+         align-items: center;
+
+        .welcome{
+             height: 180px;
+             width: 100%;
+             margin: 20px 0px;
+             padding: 10 px;
+             grid-area: welcome;
+             text-align: center;
+             color: $lightText;
+             font-family: $bodyFont;
+             background-color: $bodyBackColor;
+            
+         }
+
+        .math{
+            height: 150px;
+            width: 100%;
+            margin: 20px 0px;
+            padding: 10px;
+            grid-area: math;
+            text-align: center;
+            color: $lightText;
+            font-family: $bodyFont;
+            background-color: $bodyBackColor;
+                      
+         }
+
+         
+
+    }
+
 }
